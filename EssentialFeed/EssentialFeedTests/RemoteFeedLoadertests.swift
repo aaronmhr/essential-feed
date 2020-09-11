@@ -79,12 +79,12 @@ class RemoteFeedLoaderTests: XCTestCase {
                         file: StaticString = #file,
                         line: UInt = #line) {
 
-        var capturedResult: [RemoteFeedLoader.Result] = []
-        sut.load { capturedResult.append($0) }
+        var capturedResults: [RemoteFeedLoader.Result] = []
+        sut.load { capturedResults.append($0) }
 
         action()
 
-        XCTAssertEqual(capturedResult, [.failure(error)], file: file, line: line)
+        XCTAssertEqual(capturedResults, [.failure(error)], file: file, line: line)
     }
 
     private class HTTPClientSpy: HTTPClient {
