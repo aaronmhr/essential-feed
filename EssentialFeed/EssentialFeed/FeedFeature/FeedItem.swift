@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct FeedItem: Equatable {
+public struct FeedItem: Equatable, Decodable {
     public let id: UUID
     public let description: String?
     public let location: String?
@@ -19,5 +19,10 @@ public struct FeedItem: Equatable {
         self.description = description
         self.location = location
         self.imageURL = imageURL
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case id, description, location
+        case imageURL = "image"
     }
 }
