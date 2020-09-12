@@ -1,4 +1,5 @@
 # essential-feed
+[![Build Status](https://travis-ci.com/aaronmhr/essential-feed.svg?branch=master)](https://travis-ci.com/aaronmhr/essential-feed)
 ## BDD Specs
 
 ### Story: Customer requests to see their image feed
