@@ -20,6 +20,7 @@
 		18EAAE5C250D22A800007393 /* EssentialFeedAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAAE5B250D22A800007393 /* EssentialFeedAPIEndToEndTests.swift */; };
 		18EAAE5E250D22A800007393 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18245832250B92140071A577 /* EssentialFeed.framework */; };
 		18EAAE64250D288F00007393 /* XCTCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E72135250CF35F0058E910 /* XCTCase+MemoryLeakTracking.swift */; };
+		18EAAE66250D2F7300007393 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18EAAE65250D2F7300007393 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		18EAAE59250D22A800007393 /* EssentialFeedAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EAAE5B250D22A800007393 /* EssentialFeedAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedAPIEndToEndTests.swift; sourceTree = "<group>"; };
 		18EAAE5D250D22A800007393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EAAE65250D2F7300007393 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		18245828250B92140071A577 = {
 			isa = PBXGroup;
 			children = (
+				18EAAE65250D2F7300007393 /* README.md */,
 				18245834250B92140071A577 /* EssentialFeed */,
 				1824583F250B92140071A577 /* EssentialFeedTests */,
 				18EAAE5A250D22A800007393 /* EssentialFeedAPIEndToEndTests */,
@@ -286,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EAAE66250D2F7300007393 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
