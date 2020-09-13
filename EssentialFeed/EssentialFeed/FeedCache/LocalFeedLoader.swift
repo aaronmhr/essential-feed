@@ -30,7 +30,8 @@ public final class LocalFeedLoader {
         return currentDate() < maxCacheAge
     }
 }
-extension LocalFeedLoader {
+
+extension LocalFeedLoader: FeedLoader {
     public func save(_ feed: [FeedImage], completion: @escaping (SaveResult) -> Void) {
         store.deleteCachedFeed { [weak self] error in
             guard let self = self else { return }
