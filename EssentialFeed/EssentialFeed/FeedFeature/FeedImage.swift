@@ -1,5 +1,5 @@
 //
-//  FeedItem.swift
+//  FeedImage.swift
 //  EssentialFeed
 //
 //  Created by Aaron Huánuco on 11/09/2020.
