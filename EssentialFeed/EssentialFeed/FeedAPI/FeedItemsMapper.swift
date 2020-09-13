@@ -8,17 +8,6 @@
 
 import Foundation
 
-internal struct RemoteFeedItem: Decodable {
-    internal let id: UUID
-    internal let description: String?
-    internal let location: String?
-    internal let image: URL
-
-    var item: FeedItem {
-        FeedItem(id: id, description: description, location: location, imageURL: image)
-    }
-}
-
 internal final class FeedItemsMapper {
     struct Root: Decodable {
         let items: [RemoteFeedItem]
