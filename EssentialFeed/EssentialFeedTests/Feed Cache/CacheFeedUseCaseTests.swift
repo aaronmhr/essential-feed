@@ -1,5 +1,5 @@
 //
-//  CacheFeedUseCase.swift
+//  CacheFeedUseCaseTests.swift
 //  EssentialFeedTests
 //
 //  Created by Aaron Huánuco on 13/09/2020.
@@ -9,7 +9,7 @@
 import XCTest
 import EssentialFeed
 
-class CacheFeedUseCase: XCTestCase {
+class CacheFeedUseCaseTests: XCTestCase {
     func test_init_doesNotMessageStoreUponCreation() {
         let (_, store) = makeSUT()
         XCTAssertEqual(store.receivedMessages, [])

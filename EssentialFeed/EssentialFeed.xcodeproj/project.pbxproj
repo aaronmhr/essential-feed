@@ -26,7 +26,7 @@
 		18EAAE64250D288F00007393 /* XCTCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E72135250CF35F0058E910 /* XCTCase+MemoryLeakTracking.swift */; };
 		18EAAE66250D2F7300007393 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18EAAE65250D2F7300007393 /* README.md */; };
 		18EAAE68250D309600007393 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18EAAE67250D309600007393 /* .travis.yml */; };
-		18EAAE6D250D8A6000007393 /* CacheFeedUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAAE6C250D8A6000007393 /* CacheFeedUseCase.swift */; };
+		18EAAE6D250D8A6000007393 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAAE6C250D8A6000007393 /* CacheFeedUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,7 @@
 		18EAAE5D250D22A800007393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18EAAE65250D2F7300007393 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		18EAAE67250D309600007393 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
-		18EAAE6C250D8A6000007393 /* CacheFeedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCase.swift; sourceTree = "<group>"; };
+		18EAAE6C250D8A6000007393 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +203,7 @@
 		18EAAE6B250D8A4300007393 /* Feed Cache */ = {
 			isa = PBXGroup;
 			children = (
-				18EAAE6C250D8A6000007393 /* CacheFeedUseCase.swift */,
+				18EAAE6C250D8A6000007393 /* CacheFeedUseCaseTests.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -368,7 +368,7 @@
 			files = (
 				18245854250BA1020071A577 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				18E72136250CF35F0058E910 /* XCTCase+MemoryLeakTracking.swift in Sources */,
-				18EAAE6D250D8A6000007393 /* CacheFeedUseCase.swift in Sources */,
+				18EAAE6D250D8A6000007393 /* CacheFeedUseCaseTests.swift in Sources */,
 				18E72133250CD8430058E910 /* URLSessionHTTPClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
