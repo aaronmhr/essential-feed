@@ -33,6 +33,7 @@
 		18EAAE66250D2F7300007393 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18EAAE65250D2F7300007393 /* README.md */; };
 		18EAAE68250D309600007393 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18EAAE67250D309600007393 /* .travis.yml */; };
 		18EAAE6D250D8A6000007393 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAAE6C250D8A6000007393 /* CacheFeedUseCaseTests.swift */; };
+		18FF3004250FEC7600618259 /* CodableFeedStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF3003250FEC7600618259 /* CodableFeedStoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		18EAAE65250D2F7300007393 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		18EAAE67250D309600007393 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		18EAAE6C250D8A6000007393 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
+		18FF3003250FEC7600618259 /* CodableFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				18800BE5250E608B00AD4270 /* Helpers */,
+				18FF3003250FEC7600618259 /* CodableFeedStoreTests.swift */,
 				18EAAE6C250D8A6000007393 /* CacheFeedUseCaseTests.swift */,
 				18800BE2250E5EAF00AD4270 /* LoadFeedFromCacheUseCaseTests.swift */,
 				18800BE8250EBCDF00AD4270 /* ValidateFeedCacheUseCaseTests.swift */,
@@ -393,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FF3004250FEC7600618259 /* CodableFeedStoreTests.swift in Sources */,
 				18800BEB250EC21D00AD4270 /* FeedCacheTestHelpers.swift in Sources */,
 				18800BE9250EBCDF00AD4270 /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				18245854250BA1020071A577 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
