@@ -170,41 +170,41 @@ class CodableFeedStoreTests: XCTestCase {
     func test_delete_hasNoSideEffectsOnEmptyCache() {
         let sut = makeSUT()
 
-        let exp = expectation(description: "Wait for deletion to complete")
-        var deletionError: Error?
-        sut.deleteCachedFeed { error in
-            deletionError = error
+        let deletionError = deleteCache(from: sut)
 
-            exp.fulfill()
-        }
-        wait(for: [exp], timeout: 1.0)
-
-        XCTAssertNil(deletionError)
+        XCTAssertNil(deletionError, "Expected empty cache deletion to succeed")
         expect(sut, toRetrieve: .empty)
     }
 
-        func test_delete_emptiesPreviouslyInsertedCache() {
-            let sut = makeSUT()
-            insert((uniqueImageFeed().local, Date()), to: sut)
+    func test_delete_emptiesPreviouslyInsertedCache() {
+        let sut = makeSUT()
+        insert((uniqueImageFeed().local, Date()), to: sut)
 
-            let exp = expectation(description: "Wait for deletion to complete")
-            var deletionError: Error?
-            sut.deleteCachedFeed { error in
-                deletionError = error
+        let deletionError = deleteCache(from: sut)
 
-                exp.fulfill()
-            }
-            wait(for: [exp], timeout: 1.0)
-
-            XCTAssertNil(deletionError)
-            expect(sut, toRetrieve: .empty)
-        }
+        XCTAssertNil(deletionError)
+        XCTAssertNil(deletionError, "Expected non-empty cache deletion to succeed")
+        expect(sut, toRetrieve: .empty)
+    }
 
     // MARK: - Helpers
     private func makeSUT(storeURL: URL? = nil, file: StaticString = #file, line: UInt = #line) -> CodableFeedStore {
         let sut = CodableFeedStore(storeURL: storeURL ?? testSpecificStoreURL())
         trackForMemoryLeaks(sut, file: file, line: line)
         return sut
+    }
+
+    @discardableResult
+    private func deleteCache(from sut: CodableFeedStore, file: StaticString = #file, line: UInt = #line) -> Error? {
+        let exp = expectation(description: "Wait for deletion to complete")
+        var deletionError: Error?
+        sut.deleteCachedFeed { receivedDeletionError in
+            deletionError = receivedDeletionError
+            exp.fulfill()
+        }
+        wait(for: [exp], timeout: 1.0)
+
+        return deletionError
     }
 
     @discardableResult
