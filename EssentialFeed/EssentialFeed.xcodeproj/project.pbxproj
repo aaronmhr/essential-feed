@@ -218,8 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				18E72135250CF35F0058E910 /* XCTCase+MemoryLeakTracking.swift */,
-				18A5E3DF2512870F00570839 /* XCTestCase+FeesStoreHelpers.swift */,
 				18800BEC250EC2D700AD4270 /* SharedTestHelpers.swift */,
+				18A5E3DF2512870F00570839 /* XCTestCase+FeesStoreHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
