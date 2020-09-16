@@ -1,5 +1,5 @@
 //
-//  XCTestCase+FeesStoreHelpers.swift
+//  XCTestCase+FeesStoreSpecs.swift
 //  EssentialFeedTests
 //
 //  Created by Aaron Huánuco on 16/09/2020.
