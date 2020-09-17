@@ -155,8 +155,8 @@ extension FeedStoreSpecs where Self: XCTestCase {
             default:
                 XCTFail("Expected to retrieve \(expectedResult), got \(retrievedResult) instead", file: file, line: line)
             }
+            exp.fulfill()
         }
-        exp.fulfill()
         wait(for: [exp], timeout: 1.0)
     }
 
