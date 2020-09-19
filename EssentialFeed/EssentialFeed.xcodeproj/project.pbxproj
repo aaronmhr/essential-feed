@@ -49,8 +49,6 @@
 		18EAAE66250D2F7300007393 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 18EAAE65250D2F7300007393 /* README.md */; };
 		18EAAE68250D309600007393 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18EAAE67250D309600007393 /* .travis.yml */; };
 		18EAAE6D250D8A6000007393 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EAAE6C250D8A6000007393 /* CacheFeedUseCaseTests.swift */; };
-		18FF3004250FEC7600618259 /* CodableFeedStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF3003250FEC7600618259 /* CodableFeedStoreTests.swift */; };
-		18FF300625102A7F00618259 /* CodableFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF300525102A7F00618259 /* CodableFeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,8 +119,6 @@
 		18EAAE65250D2F7300007393 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		18EAAE67250D309600007393 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		18EAAE6C250D8A6000007393 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
-		18FF3003250FEC7600618259 /* CodableFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStoreTests.swift; sourceTree = "<group>"; };
-		18FF300525102A7F00618259 /* CodableFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,7 +268,6 @@
 		18B33EA9251552CB00873261 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
-				18B33EAE2515533300873261 /* Codable */,
 				18B33EAD2515531900873261 /* CoreData */,
 			);
 			path = Infrastructure;
@@ -288,14 +283,6 @@
 				18B33EB42515545400873261 /* ManagedFeedImage.swift */,
 			);
 			path = CoreData;
-			sourceTree = "<group>";
-		};
-		18B33EAE2515533300873261 /* Codable */ = {
-			isa = PBXGroup;
-			children = (
-				18FF300525102A7F00618259 /* CodableFeedStore.swift */,
-			);
-			path = Codable;
 			sourceTree = "<group>";
 		};
 		18B33EC625156ACC00873261 /* EssentialFeedCacheIntegrationTests */ = {
@@ -330,7 +317,6 @@
 			children = (
 				18A5E4092512918E00570839 /* FeedStoreSpecs */,
 				18800BE5250E608B00AD4270 /* Helpers */,
-				18FF3003250FEC7600618259 /* CodableFeedStoreTests.swift */,
 				18C1B2DB25140B550094D4B5 /* CoreDataFeedStoreTests.swift */,
 				18EAAE6C250D8A6000007393 /* CacheFeedUseCaseTests.swift */,
 				18800BE2250E5EAF00AD4270 /* LoadFeedFromCacheUseCaseTests.swift */,
@@ -521,7 +507,6 @@
 				18B33EBA2515547A00873261 /* ManagedCache.swift in Sources */,
 				18800BDD250E23E700AD4270 /* FeedStore.swift in Sources */,
 				18800BDB250E22E600AD4270 /* LocalFeedLoader.swift in Sources */,
-				18FF300625102A7F00618259 /* CodableFeedStore.swift in Sources */,
 				1871ACC4250C49E20003329C /* HTTPClient.swift in Sources */,
 				1824584F250B925F0071A577 /* FeedImage.swift in Sources */,
 				18E72138250D1D9E0058E910 /* URLSessionHTTPClient.swift in Sources */,
@@ -533,7 +518,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18FF3004250FEC7600618259 /* CodableFeedStoreTests.swift in Sources */,
 				18800BEB250EC21D00AD4270 /* FeedCacheTestHelpers.swift in Sources */,
 				18800BE9250EBCDF00AD4270 /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				18245854250BA1020071A577 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
