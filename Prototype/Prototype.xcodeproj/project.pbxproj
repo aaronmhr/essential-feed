@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185BA5AB2516AA7800ECFB96 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185BA5AA2516AA7800ECFB96 /* FeedViewController.swift */; };
 		187D194E251694D2008C0DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D194D251694D2008C0DE8 /* AppDelegate.swift */; };
 		187D1950251694D2008C0DE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D194F251694D2008C0DE8 /* SceneDelegate.swift */; };
 		187D1955251694D2008C0DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187D1953251694D2008C0DE8 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185BA5AA2516AA7800ECFB96 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		187D194A251694D2008C0DE8 /* Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187D194D251694D2008C0DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		187D194F251694D2008C0DE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				187D194D251694D2008C0DE8 /* AppDelegate.swift */,
 				187D194F251694D2008C0DE8 /* SceneDelegate.swift */,
 				187D1953251694D2008C0DE8 /* Main.storyboard */,
+				185BA5AA2516AA7800ECFB96 /* FeedViewController.swift */,
 				187D1956251694D3008C0DE8 /* Assets.xcassets */,
 				187D1958251694D3008C0DE8 /* LaunchScreen.storyboard */,
 				187D195B251694D3008C0DE8 /* Info.plist */,
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				187D194E251694D2008C0DE8 /* AppDelegate.swift in Sources */,
+				185BA5AB2516AA7800ECFB96 /* FeedViewController.swift in Sources */,
 				187D1950251694D2008C0DE8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
